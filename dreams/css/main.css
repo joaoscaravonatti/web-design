@@ -1,0 +1,378 @@
+/* Definição genérica para responsividade */
+html { font-size: calc(1em + 1vw); }
+/* Especificação de tamanho de fonte entre 14px e 26px  */
+body {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-family: 'Arial', sans-serif;
+}
+/* === HEADER === */
+div.topo{
+    background: url('../img/fundo-topo.jpg') no-repeat center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 645px;
+}
+
+div.topo header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 10vw 5vh 10vw;
+}
+
+div.topo header nav h1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+div.topo header nav ul{
+    display: flex;
+    color: white;
+    font-size: 0.7em;
+}
+
+div.topo header nav ul li{
+    padding: 2vh 1vh 0 1vh;
+}
+
+div.topo header nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+div.topo header nav ul li a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 1px;
+}
+
+/* === BANNER === */
+
+div.topo section.banner{
+    padding: 15vh 0 15vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+div.topo section.banner div{
+    width: 40vw;
+}
+
+div.topo section.banner div h1{
+    color: white;
+    font-size: 2em;
+    border-bottom: #32c2f4 0.8vh solid;
+    padding: 0 0 7vh 0;
+    font-weight: bold;
+}
+
+div.topo section.banner div h1 span{
+    color: #ccc8c7;
+}
+
+div.topo section.banner div p{
+    padding: 7vh 1vw 1vh 1vw;
+    color: #ccccca;
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+/* === SERVICES === */
+
+section.services{
+    padding: 10vh 5vw 10vh 5vw;
+    text-align: center;
+}
+
+section.services div{
+    padding: 0 30vw 5vh 30vw;
+}
+
+section.services div h2{
+    color: black;
+    font-size: 1.5em;
+    border-bottom: #99defb 0.4vh solid;
+    padding: 0 0 5vh 0;
+    font-weight: bold;
+}
+
+section.services ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10vh;
+}
+
+section.services ul li{
+    text-align: center;
+    width: 25vw;
+}
+
+section.services ul li h3{
+    padding: 1vw;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+section.services ul li p{
+    color: #b1b1b1;
+    padding: 1vw;
+    font-size: 0.7em;
+    font-weight: 100;
+}
+
+/* === PORTFOLIO === */
+
+section.portfolio div.descricao{
+    text-align: center;
+    padding: 0 30vw 0 30vw;
+}
+
+section.portfolio div.descricao h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 3vh;
+}
+
+section.portfolio div.descricao p{
+    font-size: 0.7em;
+    color: #b1b1b1;
+    font-weight: 100;
+    padding: 2vh;
+}
+
+section.portfolio div.imagens{
+    padding: 5vh 0 0 0;
+}
+
+section.portfolio div.imagens ul{
+    width: 100%;
+    margin: 5vh 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.portfolio div.imagens ul li{
+    width: calc(100% / 3);
+}
+
+section.portfolio div.imagens ul li img{
+    width: 100%;
+    height: 100%;
+}
+
+/* === TEAM === */
+
+section.team{
+    background: #f7f7f7;
+    padding: 10vh 0 10vh 0;
+}
+
+section.team div.titulo{
+    padding: 5vh 39vw 5vh 39vw;
+    text-align: center;
+}
+
+section.team div.titulo h2{
+    color: black;
+    font-size: 1.5em;
+    border-bottom: #99defb 0.2vh solid;
+    padding: 0 0 5vh 0;
+    font-weight: bold;
+}
+
+section.team ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.team ul li{
+    padding: 5vw;
+    text-align: center;
+}
+
+section.team ul li img{
+    border-radius: 100%;
+}
+
+section.team ul li h4{
+    padding: 1vw 0 2vh 0;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+section.team ul li p{
+    font-size: 0.7em;
+    color: #848484;
+    font-weight: 100;
+    margin: 1vh;
+}
+
+section.team ul li ul.redes li{
+    padding: 1vh;
+}
+
+/* === FOOTER === */
+
+footer{
+    background: #111;
+}
+
+footer div{
+    text-align: center;
+    padding: 7vh 20vw 7vh 20vw;
+}
+
+footer div h3{
+    border-top: white 0.1vh solid; 
+    font-size: 0.7em;
+    color: white;
+    padding: 5vh 0 0 0;
+}
+
+@media all and (max-width: 768px){
+
+    div.topo{
+        background-attachment: scroll;
+    }
+
+    /* === HEADER === */
+
+    div.topo header nav{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 5vh 10vw 5vh 10vw;
+    }
+    div.topo header nav h1{
+        width: 100vw;
+        font-size: 2em;
+    }
+    div.topo header nav ul{
+        font-size: 1em;
+    }
+
+    /* === BANNER === */
+
+    div.topo section.banner{
+        padding: 5vh 0 5vh 0;
+    }
+    div.topo section.banner div{
+        width: 60vw;
+    }
+    div.topo section.banner div p{
+        font-size: 1.5em;
+    }
+
+    /* === SERVICES === */
+
+    section.services div{
+        padding: 1vh 25vw 1vh 25vw;
+    }
+    section.services div h2{
+        font-size: 2em;
+    }
+    section.services ul li{
+        font-size: 2em;
+        width: 50vw;
+        padding: 3vh;
+    }
+
+    /* === PORTFOLIO === */
+
+    section.portfolio div.descricao{
+        font-size: 2em;
+        padding: 0 10vw 0 10vw;
+    }
+    section.portfolio div.imagens ul li{
+        width: 50vw;
+    }
+
+    /* === TEAM === */
+
+    section.team div.titulo{
+        padding: 5vh 15vw 5vh 15vw;
+        font-size: 2em;
+    }
+    section.team ul li{
+        width: 100vw;
+    }
+    section.team ul li h4{
+        padding: 1vh 0 0 1vh;
+        font-size: 1.5em;
+    }
+    section.team ul li p{
+        font-size: 1.3em;
+    }
+    section.team ul li ul.redes li{
+        width: 10vw;
+        padding: 2vh 0 0 0;
+    }
+
+    /* === FOOTER === */
+
+    footer{
+        font-size: 2em;
+    }
+}
+
+@media all and (max-width: 480px){
+
+    /* === HEADER === */
+
+    div.topo header nav ul{
+        margin: 2vh 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+
+    /* === SERVICES === */
+
+    section.services div{
+        padding: 5vh 20vw 5vh 20vw;
+    }
+    section.services ul{
+        padding: 0;
+    }
+    section.services ul li{
+        width: 60vw;
+        padding: 1vh;
+    }
+
+    /* === PORTFOLIO === */
+
+    section.portfolio div.descricao h2{
+        font-size: 1em;
+    }
+    section.portfolio div.descricao p{
+        font-size: 0.7em;
+    }
+    section.portfolio div.imagens ul li{
+        width: 100vw;
+    }
+
+    /* === TEAM === */
+
+    section.team div.titulo h2{
+        font-size: 1.1em;
+    }
+    section.team ul li ul.redes li{
+        margin: 5vw;
+    }
+
+    /* === FOOTER === */
+
+    footer div{
+        padding: 5vh 10vw 5vh 10vw;
+    }
+    footer div h3{
+        font-size: .5em;
+    }
+}

@@ -1,0 +1,198 @@
+/* Definição genérica para responsividade */
+html { font-size: calc(1em + 1vw); }
+/* Especificação de tamanho de fonte entre 14px e 26px  */
+body {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/* === HEADER === */
+header{
+  background: #87509c;
+  display: flex;
+  justify-content: space-between;
+  padding: 7vh 6vw 7vh 6vw; 
+}
+
+header ul{
+  display: flex;
+}
+
+header ul li{
+  margin: 0 0.5vw 0 0.5vw;
+}
+
+header ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 0.7em;
+  font-family: "trebuchet MS";
+  padding: 0.5vh 1vw 0.5vh 1vw;
+  border-radius: 2px;
+}
+
+header ul li a:hover{
+  background: #643a79;
+}
+
+/* === BANNER === */
+section.banner{
+  background: #87509c;
+  padding: 20vh 15vw 20vh 15vw;
+  font-family: "trebuchet MS";
+  text-align: center;
+}
+
+section.banner h2{
+  color: white;
+  font-size: 1.5em;
+}
+
+section.banner p{
+  padding: 10vh 0 0 0;
+}
+
+section.banner p a{
+  transition: 0.1s;
+  text-decoration: none;
+  color: white;
+  background: #eb7d4b;
+  font-size: 1.1em;
+  padding: 3vh 4vw 3vh 4vw;
+  border-radius: 0.2vw;
+}
+
+section.banner p a:hover{
+  border: solid black 1px;
+  color: black;
+}
+
+/* === SERVICOS === */
+section.servicos{
+  padding: 15vh 15vw 15vh 15vw;
+  background: #17c2a4;
+  font-family: "trebuchet MS";
+  color: white;
+  text-align: center;
+}
+
+section.servicos h2{
+    font-size: 1.5em;
+}
+
+section.servicos> p{
+  margin: 10vh 10vw 10vh 10vw;
+  font-size: 0.75em;
+}
+
+section.servicos ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.servicos ul li{
+  padding: 5vh 1vw 5vh 1vw;
+  width: 15vw;
+}
+
+section.servicos ul li img{
+  width: 80%;
+}
+
+section.servicos ul li p{
+  font-size: 0.75em;
+  margin: 3vh 0 3vh 0;
+}
+
+/* === FOOTER === */
+footer{
+  background: #344b8e;
+  font-family: "trebuchet MS";
+}
+
+footer nav ul{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer nav ul li{
+  padding: 5vh 2vw 5vh 2vw;
+}
+
+footer nav ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+footer nav ul li a:hover{
+  color: cyan;
+  text-decoration: none;
+}
+.selected{
+  background: #643a79;
+}
+
+@media all and (max-width: 768px) { 
+  section.servicos ul li{
+    width: 30vw;
+  }
+  section.servicos h2{
+    font-size: 2em;
+  }
+  section.servicos > p{
+    font-size: 1.3em;
+    margin: 3vh 0 2vh 0;
+  }
+  section.servicos ul li h3{
+    font-size: 1em;
+  }
+  section.servicos ul li{
+    font-size: 1em;
+  }
+  section.servicos ul li p{
+    font-size: 1em;
+  }
+}
+@media all and (max-width: 480px) { 
+  header{
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2vh 0 0 0;
+  }
+  header h1{
+    margin: 0 0 2vh 0;
+  }
+  header ul li a{
+    font-size: 1em;
+  }
+  section.banner{
+    padding: 10vh 15vw 10vh 15vw;
+  }
+  section.servicos h2{
+    font-size: 2em;
+  }
+  section.servicos > p{
+    font-size: 1.3em;
+    margin: 3vh 0 2vh 0;
+  }
+  section.servicos ul li{
+    width: 60vw;
+  }
+  section.servicos ul li h3{
+    font-size: 1.7em;
+  }
+  section.servicos ul li p{
+    font-size: 1.3em;
+  }
+  footer nav ul{
+    flex-wrap: wrap;
+  } 
+  footer nav ul li{
+    padding: 3vh 1vw 3vh 1vw;
+    width: 40vw;
+  }
+  footer nav ul li a{
+    font-size: 1.3em;
+  }
+}

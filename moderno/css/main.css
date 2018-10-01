@@ -1,0 +1,362 @@
+/* === PREDEFINIÇÕES === */
+html { font-size: calc(1em + 1vw); font-family: sans-serif; }
+
+
+/* === HEADER === */
+body header{
+    background: #323232;
+}
+
+body header h1 a img{
+    padding: 3vh 10vw;
+}
+
+body header h2{
+    margin: 15vh 0 7vh 0;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+body header > p{
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0 30vw 5vh 30vw;
+    line-height: 1.5em;
+}
+
+body header p.botao{
+    padding: 0 0 25vh 0;
+}
+
+body header p.botao a{
+    text-decoration: none;
+    color: white;
+    padding: 1vw 4vw 1vw 4vw;
+    background: #f7694e;
+    border-radius: 3px;
+    transition: 0.1s;
+    font-weight: 500;
+}
+
+body header p.botao a:hover{
+    color: black;
+    background: #ff3f21;
+    transition: 0.1s;
+}
+
+/* === SECTION.SERVICES === */
+body section.services{
+    padding: 10vh 5vw 10vh 5vw;
+}
+body section.services ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5vw 0 5vw;
+}
+body section.services ul li{
+    margin: 3vw;
+}
+body section.services ul li h3{
+    font-size: 0.7em;
+    padding: 3vw;
+    font-weight: 500;
+}
+body section.services ul li p{
+    font-size: 0.5em;
+    color: #8d8d8d;
+}
+
+/* === CONTATO === */
+
+body section.contato{
+    background:#fcfcfc;
+    padding: 10vh 5vw 10vh 5vw; 
+    text-align: center;
+}
+body section.contato h2{
+    font-size: 1em;
+    font-weight: 500;
+}
+body section.contato p{
+    color: #8d8d8d;
+    font-size: 0.5em;
+    padding: 1vh;
+}
+body section.contato div{
+    display: flex;
+    justify-content: center;
+}
+body section.contato div form{
+    padding: 8vh 5vw;
+    width: 45%;
+} 
+body section.contato div form div{
+    justify-content: space-between;
+}
+body section.contato div form div input{
+    background: #f1f5f8;
+    color: #8d8d8d;
+    border: none;
+    padding: 2vh 2vw;
+    border-radius: 2px;
+    width: 37%;
+}
+
+body section.contato div form select{
+    color: #8d8d8d;
+    background: #f1f5f8;
+    border: none;
+    padding: 2vh 2vw;
+    margin: 2vw 0 0 0;
+    border-radius: 2px;
+    width: 100%;
+}
+body section.contato div form textarea{
+    resize: none;
+    width: 100%;
+    height: 20vh;
+    border: none;
+    border-radius: 2px;
+    background: #f1f5f8;
+    padding: 1vh 1vw;
+    margin: 2vw 0 0 0;
+    box-sizing: border-box;
+    color: #8d8d8d;
+}
+body section.contato div form #enviar{
+    width: 100%;
+    padding: 2vh 2vw;
+    border: none;
+    border-radius: 2px;
+    background: #fb6952;
+    color: white;
+    font-weight: bold;
+    transition: 0.1s;
+}
+body section.contato div form #enviar:hover{
+    transition: 0.1s;
+    background: #f84f35;
+    cursor: pointer;
+}
+body section.contato div ul{
+    padding: 8vh 5vw;
+    text-align: left;
+}
+body section.contato div ul li{
+    margin: 0 0 5vh 0;
+}
+body section.contato div ul li h3{
+    margin: 0 0 3vh 0;
+    font-size: 0.8em;
+}
+body section.contato div ul li p{
+    font-size: 0.5em;
+    padding: 0;
+}
+
+/* === FOOTER === */
+body footer{
+    background: #323232;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 1vh;
+}
+body footer h2{
+    font-size: 0.7em;
+    margin: 8vh 0 8vh 20vw;
+}
+body footer ul{
+    display: flex;
+    margin: 8vh 10vw 8vh 0;
+}
+body footer ul li{
+    margin: 0 1vw 0 0;
+}
+
+/* === BREAKPOINTS === */
+@media all and (max-width: 1199px) { 
+    /* === HEADER === */
+    body header h2{
+        font-size: 3em;
+    }
+    
+    body header > p{
+        font-size: 1.5em;
+        padding: 0 20vw 5vh 20vw;
+    }
+    
+    body header p.botao a{
+        padding: 2vw 5vw 2vw 5vw;
+    }
+
+    /* === SECTION.SERVICES ===  */
+    body section.services ul{
+        flex-wrap: wrap;
+    }
+    body section.services ul li{
+        margin: 5vh;
+    }
+    body section.services ul li img{
+        width: 50%;
+    }
+    body section.services ul li h3{
+        font-size: 2.5em;
+        padding: 3vh;
+        font-weight: 500;
+    }
+    body section.services ul li p{
+        font-size: 1.5em;
+    }
+
+    /* === CONTATO === */
+    body section.contato h2{
+        font-size: 3em;
+    }
+    body section.contato p{
+        font-size: 2em;
+    }
+    body section.contato div{
+        flex-wrap: wrap;   
+    }
+    body section.contato div form{
+        width: 100vw;
+    }
+    body section.contato div form div input{
+        padding: 2vh 2vw;
+        width: 100%;
+        margin: 1vh 0 0 0;
+        font-size: 1.5em;
+    }
+
+    body section.contato div form select{
+        padding: 2vh 2vw;
+        margin: 2vw 0 0 0;
+        font-size: 1.5em;
+    }
+
+    /* body section.contato div form select option{
+        
+    } */
+
+    body section.contato div form textarea{
+        font-size: 1.5em;
+    }
+    body section.contato div form #enviar{
+        margin: 1vh 0 0 0;
+        font-size: 1.5em;
+    }
+    body section.contato{
+        padding: 5vh 0 5vh 0; 
+    }
+    body section.contato div ul{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    body section.contato div ul li{
+        margin: 3vh;
+    }
+    body section.contato div ul li h3{
+        margin: 0 0 3vh 0;
+        font-size: 2em;
+    }
+    body section.contato div ul li p{
+        font-size: 1em;
+        padding: 0;
+    }
+
+    /* === FOOTER ===  */
+    body footer{
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1vh;
+    }
+    body footer h2{
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+        padding: 5vh 0 2vh 0;
+        width: 100%;
+    }
+    body footer ul{
+        display: flex;
+        margin: 1vh;
+    }
+    body footer ul li{
+        margin: 0 3vw 0 3vw;
+    }
+    body footer ul li img{
+        width: 150%;
+    }
+ } 
+@media all and (max-width: 480px) {
+    /* === HEADER === */
+    body header h1 a img{
+        width: 20%;
+    }
+    body header h2{
+        margin: 5vh 0 5vh 0;
+        font-size: 2em;
+    }
+    body header > p{
+        font-size: 1em;
+    }
+    body header p.botao a{
+        padding: 2vh 7vw 2vh 7vw;
+    }
+
+    /* === SECTION.SERVICES ===  */
+    body section.services ul li img{
+        width: 60%;
+    }
+    body section.services ul li h3{
+        font-size: 2em;
+    }
+    body section.services ul li p{
+        font-size: 1em;
+    }
+
+    /* === CONTATO === */
+    body section.contato h2{
+        font-size: 2em;
+        padding: 0 5vh 0 5vh;
+    }
+    body section.contato p{
+        font-size: 1em;
+        padding: 3vh 5vh 0 5vh;
+    }
+    body section.contato div form div input{
+        font-size: 1em;
+    }
+
+    body section.contato div form select{
+        font-size: 1em;
+    }
+
+    body section.contato div form textarea{
+        font-size: 1em;;
+    }
+    body section.contato div form #enviar{
+        font-size: 1em;
+    }
+    body section.contato div ul{
+        justify-content: left;
+    }
+
+    /* === FOOTER ===  */
+    body footer h2{
+        line-height: 1.5em;
+        font-size: 0.9em;
+    }
+    body footer ul li{
+        margin: 0 5vw 0 5vw;
+    }
+    body footer ul li img{
+        width: 100%;
+    }
+}

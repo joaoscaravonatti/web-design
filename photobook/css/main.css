@@ -1,0 +1,173 @@
+/* Definição genérica para responsividade */
+html { font-size: calc(1em + 1vw); }
+/* Especificação de tamanho de fonte entre 14px e 26px  */
+body {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-family: sans-serif;
+}
+
+/* === HEADER === */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 10vw 5vh 10vw;
+}
+
+header h1{
+    font-size: 0.8em;
+}
+
+header h1 a.telefone{
+    color: black;
+    background: #ffd200;
+    padding: 1vh 3vw 1vh 3vw;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+header h1 a.telefone:hover{
+    color: white;
+}
+
+/* === BANNER ===*/
+section.banner{
+    background: url('../img/banner.png') no-repeat center fixed;
+    text-align: center;
+    height: 547px;
+    background-size: cover;
+}
+section.banner div{
+    padding: 10vh 5vw 5vh 5vw;
+}
+section.banner h2{
+    font-size: 3em;
+    margin: 0 0 3vh 0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+section.banner p{
+    font-size: 1em;
+    margin: 0 0 2vh 0;
+    padding: 0 0 10vh 0;
+}
+section.banner a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    margin: 2vh 0 0 0;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 2vh 3vw 2vh 3vw;
+    transition: 0.2s;
+}
+
+section.banner a:hover{
+    background: black;
+    color: white;
+}
+/* === GALERIA === */
+section.galeria{
+    background: rgba(211, 211, 211, 0.705);
+    padding: 15vh 0 20vh 0;
+    text-align: center;
+}
+section.galeria h2{
+    font-size: 2em;
+}
+section.galeria ul{
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section.galeria li{
+    padding: 3vw;
+}
+section.galeria li p{
+    padding: 1vh;
+    font-size: 1em;
+}
+section.galeria li img{
+    width: 80%;
+}
+section.galeria a{
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    background: #e11a27; 
+    padding: 2.5vh 3vw 2.5vh 3vw;
+    transition: 0.2s;
+}
+section.galeria a:hover{
+    color: black;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+}
+/* === TESTIMONIALS === */
+section.testimonials{
+    padding: 15vh 5vw 10vh 5vw;
+}
+section.testimonials h2{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    padding: 2vh;
+}
+section.testimonials ul{
+    display: flex;
+    justify-content: center;
+}
+section.testimonials ul li{
+    padding: 5vw;
+    width: 45vw;
+}
+section.testimonials ul li.direita{
+    text-align: right;
+}
+section.testimonials ul li p{
+    margin: 2vh;
+}
+
+/* === FOOTER === */
+footer{
+    padding: 10vh;
+    text-align: center;
+    font-size: 0.8em;
+    background: #ffd200;
+}
+
+@media all and (max-width: 768px) {     
+    section.banner div{
+        padding: 20vh 5vw 0 5vw;
+    }
+}
+
+@media all and (max-width: 480px) { 
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header h1{
+        margin: 1.5vh;
+    }
+    section.banner div{
+        padding: 20vh 5vw 0 5vw;
+    }
+    section.galeria ul li {
+        margin: 7vh;
+    }
+    section.galeria ul li p{
+        font-size: 1.8em;
+    }
+    section.testimonials ul{
+        flex-wrap: wrap;
+    }
+    section.testimonials ul li{
+        padding: 5vw;
+        width: 70vw;
+    }
+    section.testimonials ul li.direita{
+        text-align: left;
+    }
+}

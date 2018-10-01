@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cadastre-se</title>
+  <meta name="description" content="Samsung shop">
+  <meta name="keywords" content="moderno">
+  <meta name="author" content="Joao">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- page content -->
+  <section>
+    <form action="#" method="get">
+        <h1>Cadastro</h1>
+        <label for="nome">Nome*</label>
+        <br>
+        <input type="text" name="nome" id="nome"  required>
+        <fieldset>
+            <legend>Data de Nascimento*</legend>
+                <select name="dia" id="dia" required></select>
+                <select name="mes" id="mes" required></select>
+                <select name="ano" id="ano" required>
+                    <option value="2000">2000</option>
+                </select>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo*</legend>
+            <label>
+                <input type="radio" name="sexo" id="m" value="m" required>
+                Masculino
+            </label>
+            <label>
+                <input type="radio" name="sexo" id="f" value="f" required>
+                Feminino
+            </label>
+        </fieldset>
+        <label for="cpf">CPF/CNPJ*</label>
+        <br>
+        <input type="text" id="cpf" name="cpf"  placeholder="999.999.999-99" required>
+        <br>
+        <label for="email">Email*</label>
+        <br>
+        <input type="email" id="email" name="email"  required>
+        <fieldset>
+            <label for="telefone">Telefone*</label>
+            <br>
+            <input type="tel" placeholder="(99) 9999-9999" id="telefone" name="telefone"  required>
+            <select name="tipo" id="tipo" required>
+                <option value="celular">Celular</option>
+                <option value="residencial">Residencial</option>
+                <option value="trabalho">Trabalho</option>
+            </select>
+        </fieldset>
+        <label for="senha">Senha*</label>
+        <br>
+        <input type="password" name="senha" id="senha"  required>
+        <br>
+        <label for="confirmaSenha">Confirmar Senha*</label>
+        <br>
+        <input type="password" name="confirmaSenha" id="confirmaSenha"  required>
+        <br>
+        <div>
+            <input type="checkbox" id="lancamento" name="lancamento">
+            <label for="lancamento">
+                Desejo ficar por dentro dos lançamentos de produtos e novidades através da newsletter Samsung.
+            </label>
+            <br>
+            <input type="checkbox" name="notificacao" id="notificacao">
+            <label for="notificacao">
+                Desejo receber notificações através de SMS
+            </label>
+        </div>
+        <input type="submit" name="enviar" value="Cadastre-se">
+        <p>
+            Já possui uma conta? <a href="#">Iniciar sessão</a>.
+        </p>
+    </form>
+  </section>
+  <script>
+    let elementoMes = document.querySelector("#mes");
+    let elementoDia = document.querySelector("#dia");
+    let i = 1;
+    let meses = [
+        'Janeiro',
+        'Fevereiro',
+        'Março',
+        'Abril',
+        'Maio',
+        'Junho',
+        'Julho',
+        'Agosto',
+        'Setembro',
+        'Outubro',
+        'Novembro',
+        'Dezembro'
+    ];
+        for(let dia = 1; dia <= 31; dia++){
+            let opcao = document.createElement("option");
+            opcao.textContent = dia;
+            opcao.value = dia;
+            elementoDia.appendChild(opcao);
+        }
+        meses.forEach(function(mes){
+            let opcao = document.createElement("option");
+            opcao.textContent = mes;
+            opcao.value = i;
+            elementoMes.appendChild(opcao);
+            i++;
+        });
+  </script>
+</body>
+</html>

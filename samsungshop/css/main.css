@@ -1,0 +1,231 @@
+/* === PREDEFINIÇÕES === */
+html { font-size: calc(1em + 1vw); font-family: sans-serif; }
+
+section{
+    padding: 5vh 35vw 5vh 35vw;
+}
+
+section form h1{
+    padding: 1vh 0 5vh 0;
+}
+
+section form label{
+    font-size: 0.6em;
+    color: #0959A2;
+    display: inline-block;
+    margin: 2vh 0 0 0;
+}
+
+section form input[type='text']{
+    margin-top: 2vh;
+    border: 2px solid #c6d9eb;
+    color: #333;
+    font-family: sans-serif;
+    padding: 1.5vh;
+    text-align: left;
+    text-transform: none;
+    width: 100%;
+}
+
+section form input[type='email']{
+    margin-top: 2vh;
+    border: 2px solid #c6d9eb;
+    color: #333;
+    font-family: sans-serif;
+    padding: 1.5vh;
+    text-align: left;
+    text-transform: none;
+    width: 100%;
+}
+
+section form input[type='radio']{
+    width: 2vw;
+    height: 2vw;
+    vertical-align: middle;
+}
+
+section form input[type='checkbox']{
+    width: 2vw;
+    height: 2vw;
+}
+
+section form input[type='tel']{
+    margin-top: 2vh;
+    border: 2px solid #c6d9eb;
+    color: #333;
+    font-family: sans-serif;
+    padding: 1.5vh;
+    text-align: left;
+    text-transform: none;
+    width: auto;
+}
+
+section form input[type='password']{
+    margin-top: 2vh;
+    border: 2px solid #c6d9eb;
+    color: #333;
+    font-family: sans-serif;
+    padding: 1.5vh;
+    text-align: left;
+    text-transform: none;
+    width: 100%;
+}
+
+section form input[type='submit']{
+    display: inline-block;
+    margin: 5vh 0 5vh 0;
+    border: 1px solid #0F73BC;
+    color: #0F73BC;
+    background: #FFF;
+    padding: 1.5vh 1vw 1.5vh 1vw;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+section form input[type='submit']:hover{
+    background: #0F73BC;
+    color: white;
+    transition: 0.4s;
+}
+
+section form div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section form div div{
+    flex-wrap: nowrap;
+}
+
+section form fieldset{
+    margin: 2vh 0 2vh 0;
+}
+
+section form fieldset label{
+    font-size: 0.6em;
+    color: #0959A2;
+}
+
+section form fieldset legend{
+    font-size: 0.6em;
+    color: #0959A2;
+    margin: 2vh 0 0 0;
+}
+
+section form fieldset select{
+    margin-top: 2vh;
+    box-sizing: border-box;
+    border: 2px solid #c6d9eb;
+    color: #333;
+    font-family: sans-serif;
+    padding: 1.5vh;
+    text-align: left;
+    text-transform: none;
+}
+
+section form p{
+    font-size: 0.6em;
+}
+/* === BREAKPOINTS === */
+@media all and (max-width: 1199px) { 
+    section{
+        padding: 5vh 10vw 5vh 10vw;
+    }
+
+    section h1{
+        font-size: 2em;
+    }
+
+    section form label{
+        font-size: 1em;
+    }
+
+    section form fieldset label{
+        font-size: 1em;
+        color: #0959A2;
+    }
+    
+    section form fieldset legend{
+        font-size: 1em;
+        color: #0959A2;
+        margin: 2vh 0 0 0;
+    }
+
+    section form fieldset select{
+        font-size: 1em;
+    }
+
+    section form input[type='text']{
+        font-size: 1em;
+    }
+    
+    section form input[type='email']{
+        font-size: 1em;
+    }
+    
+    section form input[type='radio']{
+        width: 2vh;
+        height: 2vh;
+    }
+    
+    section form input[type='checkbox']{
+        width: 2vw;
+        height: 2vw;
+    }
+    
+    section form input[type='tel']{
+        font-size: 1em;
+    }
+    
+    section form input[type='password']{
+        font-size: 1em;
+    }
+    
+    section form input[type='submit']{
+        font-size: 1em;
+        padding: 2vh 3vw 2vh 3vw;
+    }
+
+    section form p{
+        font-size: 1em;
+    }
+} 
+@media all and (max-width: 480px) {
+    section{
+        padding: 5vh 15vw 5vh 15vw;
+    }
+
+    section input{
+        margin: 2vh 0 2vh 0;
+    }
+
+    section fieldset{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section fieldset select{
+        margin: 2vh 0 2vh 0;
+    }
+
+    section form input[type='radio']{
+        width: 3vh;
+        height: 3vh;
+    }
+
+    section form input[type='checkbox']{
+        width: 3vh;
+        height: 3vh;
+    }
+
+    section form input[type='tel']{
+        font-size: 1em;
+        width: 100%;
+    }
+
+    section form p{
+        line-height: 1.3em;
+    }
+}
