@@ -1,0 +1,11 @@
+/* === HEADER === */
+header div#titulo{
+    background: black;
+    color: white;
+    padding: 1vh 1vw 1vh 1vw;
+}
+header p{
+    padding: 1vh 1vw 1vh 1vw;
+    text-align: right;
+    color: red;
+}
