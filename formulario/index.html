@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Cadastro para emissão de CNH</h1>
+        </div>
+        <p>*Campos Obrigatórios estão marcados com asterisco</p>
+    </header>
+    <form action="#" method="get">
+        <section class="pessoais">
+            <h2>Dados pessoais</h2>
+            <label for="nome">Nome*</label>
+            <br>
+            <input type="text" id="nome" name="nome">
+            <br>
+            <label for="pai">Nome do pai*</label>
+            <br>
+            <input type="text" id="pai" name="pai">
+            <br>
+            <label for="mae">Nome da mãe*</label>
+            <br>
+            <input type="text" id="mae" name="mae">
+            <br>
+            <label for="dataNascimento">Data de nascimento*</label>
+            <br>
+            <fieldset>
+                <input type="radio" name="sexo" id="m" value="m">
+                <label for="m">Masculino</label>
+                <input type="radio" name="sexo" id="f" value="f">
+                <label for="f">Feminino</label>
+            </fieldset>
+            <label for="nacionalidade">Nascionalidade*</label>
+            <br>
+            <select name="nacionalidade" id="nacionalidade">
+                <option disabled>- SELECIONE -</option>
+            </select>
+            <label for="estado">Estado*</label>
+            <br>
+            <select name="estado" id="estado">
+                <option disabled>- SELECIONE -</option>
+            </select>
+            <br>
+            <label for="naturalidade">Naturalidade*</label>
+            <br>
+            <select name="naturalidade" id="naturalidade">
+                <option disabled>- SELECIONE -</option>
+            </select>
+        </section>
+        <section class="condutor">
+            <label>
+                <input type="radio" id="tipo" name="tipo">
+                PGU (nº CNH sem foto)
+                <input type="radio" name="tipo" id="tipo">
+                Registro (nº CNH com foto)
+            </label>
+            <label for="registro">Nº Registro/PGU</label>
+            <input type="text" name="registro" id="registro">
+            <br>
+            <label for="categoria">Categoria Atual</label>
+            <br>
+            <select name="categoria" id="categoria">
+                <option disabled>- SELECIONE -</option>
+            </select>
+        </section>
+    </form>    
+</body>
+</html>
