@@ -1,11 +1,150 @@
 /* === HEADER === */
-header div#titulo{
+header div{
     background: black;
     color: white;
     padding: 1vh 1vw 1vh 1vw;
+    font-size: 1.5em;
 }
 header p{
-    padding: 1vh 1vw 1vh 1vw;
+    padding: 1vh 10vw 1vh 10vw;
     text-align: right;
     color: red;
+}
+/* === FORM === */
+form{
+    padding: 5vh 35vw 5vh 35vw;
+}
+form input{
+    margin: 1vh 0 2vh 0;
+    padding: 1vh 1vw 1vh 1vw;
+    width: 100%;
+    border: 2px solid darkslateblue;
+}
+form select{
+    margin: 1vh 2vw 1vh 0;
+    padding: 1vh;
+    background: white;
+    border: 2px solid darkslateblue;
+}
+form section.pessoais h2{
+    font-size: 1.5em;
+    margin: 5vh 0 3vh 0;
+}
+form section.pessoais fieldset label{
+    width: 90%;
+}
+form section.pessoais fieldset input{
+    width: 10%;
+}
+form section.pessoais ul{
+    margin: 2vh 0 2vh 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+form section.pessoais ul li{
+    width: calc(100% / 3);
+}
+form section.pessoais ul li option{
+    margin: 1vh 2vw 1vh 0;
+    padding: 1vh;
+}
+/* === CONDUTOR === */
+form section.condutor h2{
+    font-size: 1.5em;
+}
+form section.condutor fieldset{
+    padding: 2vh 0 2vh 0;
+    display: flex;
+}
+form section.condutor fieldset label{
+    width: 90%;
+}
+form section.condutor fieldset input{
+    width: 10%;
+}
+form section.condutor fieldset legend{
+    padding: 2vh 0 0 0;
+}
+form section.condutor select{
+    width: 100%;
+}
+/* === CONTATO === */
+form section.contato h2{
+    font-size: 1.5em;
+    margin: 3vh 0 1vh 0;
+}
+form section.contato p{
+    color: red;
+    font-weight: bold;
+    margin: 2vh 0 2vh 0;
+    text-align: justify;
+}
+form section.contato fieldset legend{
+    line-height: 1.5em;
+}
+form section.contato fieldset input{
+    width: 10%;
+}
+form section.contato fieldset label{
+    width: 90%;
+}
+
+/* === INFORMAÇOES === */
+form section.informacoes ul li fieldset label{
+    width: 90%;
+}
+form section.informacoes ul li fieldset input{
+    width: 10%;
+}
+form section.informacoes ul li{
+    margin: 1vh 0 1vh 0;
+}
+
+/* === CONFIRMACAO === */
+form section.confirmacao{
+    display: flex;
+    flex-wrap: wrap;
+}
+form section.confirmacao a{
+    width: 100%;
+}
+form section.confirmacao input{
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 1px;
+    padding: 2vh 0 2vh 0;
+    transition: 0.1s;
+}
+form section.confirmacao input:hover{
+    transition: 0.1s;
+    background: black;
+    color: white;
+}
+@media all and (max-width: 480px) {
+    header div h1{
+        font-size: 0.7em;
+    }
+    header p{
+        font-size: 0.8em;
+        text-align: justify;
+    }
+    form{
+        padding: 5vh 5vw 5vh 5vw;
+    }
+    form section.pessoais ul li{
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1199px)   {
+    form{
+        padding: 5vh 5vw 5vh 5vw;
+        font-size: 2em;
+    }
+    form section.pessoais ul li{
+        width: 50%;
+    }
 }
