@@ -5,6 +5,11 @@ body {
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
+.trabalhe-conosco {
+  padding: 10vh 0 0 0;
+  margin-top: 5rem;
+}
+
 /* === HEADER === */
 header{
   background: #87509c;
@@ -37,7 +42,7 @@ header ul li a:hover{
 /* === BANNER === */
 section.banner{
   background: #87509c;
-  padding: 20vh 15vw 20vh 15vw;
+  padding: 15vh 15vw 20vh 15vw;
   font-family: "trebuchet MS";
   text-align: center;
 }
@@ -64,6 +69,14 @@ section.banner p a{
 section.banner p a:hover{
   border: solid black 1px;
   color: black;
+}
+
+.engrenagem{
+  margin-bottom: 1.2rem;
+}
+
+.descricao{
+  font-size: 1em !important;
 }
 
 /* === SERVICOS === */

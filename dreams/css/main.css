@@ -109,19 +109,21 @@ section.services ul{
 
 section.services ul li{
     text-align: center;
-    width: 25vw;
+    width: 20vw;
+    padding: 5vh;
+
 }
 
 section.services ul li h3{
     padding: 1vw;
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: bold;
 }
 
 section.services ul li p{
     color: #b1b1b1;
     padding: 1vw;
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: 100;
 }
 
@@ -171,6 +173,10 @@ section.portfolio div.imagens ul li img{
 section.team{
     background: #f7f7f7;
     padding: 10vh 0 10vh 0;
+}
+section.team img:hover {
+    opacity:0.5;
+
 }
 
 section.team div.titulo{
